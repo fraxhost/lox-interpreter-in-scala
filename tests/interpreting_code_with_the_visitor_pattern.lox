@@ -1,0 +1,6 @@
+// Visitor pattern is internal, test via nested expressions
+fun double(n) {
+  return n * 2;
+}
+
+print double(21); // 42

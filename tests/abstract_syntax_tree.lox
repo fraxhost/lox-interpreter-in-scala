@@ -1,0 +1,5 @@
+// Expressions that form an AST
+var a = 10;
+var b = 20;
+var c = (a + b) * (b - a);
+print c; // 300

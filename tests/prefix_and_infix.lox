@@ -1,0 +1,6 @@
+// Prefix: unary -, logical not
+// Infix: +, -, *, /
+var x = -5;
+var y = !false;
+print x; // -5
+print y; // true

@@ -1,0 +1,8 @@
+class Calculator {
+  add(a, b) {
+    return a + b;
+  }
+}
+
+var calc = Calculator();
+print calc.add(5, 7); // 12

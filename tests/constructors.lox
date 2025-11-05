@@ -1,0 +1,12 @@
+class Cat {
+  init(name) {
+    this.name = name;
+  }
+
+  meow() {
+    print this.name + " says Meow!";
+  }
+}
+
+var kitty = Cat("Whiskers");
+kitty.meow(); // Whiskers says Meow!

@@ -1,0 +1,9 @@
+var a = "global";
+
+fun showScope() {
+  var a = "local";
+  print a; // local
+}
+
+showScope();
+print a; // global

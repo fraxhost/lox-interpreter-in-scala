@@ -1,0 +1,8 @@
+class Box {
+  init(content) {
+    this.content = content;
+  }
+}
+
+var box = Box("Secret");
+print box.content; // Secret

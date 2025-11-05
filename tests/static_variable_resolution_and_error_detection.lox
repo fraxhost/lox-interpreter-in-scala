@@ -1,0 +1,9 @@
+fun outer() {
+  var a = 10;
+  fun inner() {
+    print a; // resolves to outer's a
+  }
+  inner();
+}
+
+outer();

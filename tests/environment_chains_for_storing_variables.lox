@@ -1,0 +1,12 @@
+var x = 1;
+
+fun outer() {
+  var y = 2;
+  fun inner() {
+    var z = 3;
+    print x + y + z; // 6
+  }
+  inner();
+}
+
+outer();
