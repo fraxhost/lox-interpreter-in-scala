@@ -1,6 +1,6 @@
 # Lox Interpreter in Scala
 
-This project is a Scala implementation of the **Lox programming language**, following chapters 3–13 of *Crafting Interpreters* by Robert Nystrom. It supports **parsing, interpreting, and running Lox programs**, including classes, functions, inheritance, and closures.
+This project is a Scala implementation of the **Lox programming language**, following chapters 4–13 of *Crafting Interpreters* by Robert Nystrom. It supports **parsing, interpreting, and running Lox programs**, including classes, functions, inheritance, and closures.
 
 ---
 
@@ -90,7 +90,7 @@ This runs the test suite for your Lox interpreter.
 
 This interpreter follows the book **[Crafting Interpreters](https://craftinginterpreters.com/)**:
 
-- Chapters 3–13:
+- Chapters 4–13:
 
   - Expressions, Statements
   - Variables, Functions, and Closures
