@@ -30,6 +30,8 @@ This project is a Scala implementation of the **Lox programming language**, foll
 
 ## Running the Interpreter
 
+Move to the root directory.
+
 ### Interactive Mode (REPL)
 
 ```bash
