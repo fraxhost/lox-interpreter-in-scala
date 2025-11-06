@@ -49,7 +49,7 @@ Replace `tests/classes.lox` with your Lox source file. Don't forget to give the 
 ### Run Tests
 
 ```bash
-scala-cli src/*.scala --main-class LoxTest
+scala-cli test src
 ```
 
 This runs the test suite for your Lox interpreter.
