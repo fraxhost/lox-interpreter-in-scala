@@ -1,12 +1,14 @@
 import scala.jdk.CollectionConverters.*
 import scala.collection.mutable.{HashMap, ListBuffer, Map => MutableMap}
+import java.util.IdentityHashMap
 import Stmt.Visitor
 
 class Interpreter extends Expr.Visitor[Any] with Stmt.Visitor[Unit] {
 
   val globals: Environment = new Environment()
   private var environment: Environment = globals
-  private val locals: MutableMap[Expr, Int] = HashMap()
+  val locals: scala.collection.mutable.Map[Expr, Int] =
+    new IdentityHashMap[Expr, Int]().asScala
 
   // clock() native function
   globals.define(
@@ -103,6 +105,8 @@ class Interpreter extends Expr.Visitor[Any] with Stmt.Visitor[Unit] {
       case None =>
         globals.assign(expr.name, value)
     }
+
+    environment.assign(expr.name, value);
     value
   }
 
@@ -264,7 +268,7 @@ class Interpreter extends Expr.Visitor[Any] with Stmt.Visitor[Unit] {
   }
 
   def resolve(expr: Expr, depth: Int): Unit =
-    locals(expr) = depth
+    locals.put(expr, depth)
 
   def executeBlock(statements: List[Stmt], newEnv: Environment): Unit = {
     val previous = environment
