@@ -48,13 +48,19 @@ scala-cli src/*.scala --main-class Lox -- tests/classes.lox
 
 Replace `tests/classes.lox` with your Lox source file. Don't forget to give the proper file path with the file name relative to the root folder.
 
-### Run Tests
+### Run Tests and Print Results to Console
 
 ```bash
 scala-cli test src
 ```
 
-This runs the test suite for your Lox interpreter.
+### Run Tests and Print Results to Text File
+
+```bash
+scala-cli test --color never src 2>&1 | sed -E "s/\x1b\[[0-9;]*m//g" | grep -v "WARNING" > clean_test_results.txt
+```
+
+This runs the test suite for our Lox interpreter.
 
 ---
 
