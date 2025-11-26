@@ -8,6 +8,7 @@ object Lox {
   private val interpreter = new Interpreter()
   var hadError: Boolean = false
   var hadRuntimeError: Boolean = false
+  var testMode = false
 
   def main(args: Array[String]): Unit = {
     if (args.length > 1) {
@@ -64,6 +65,11 @@ object Lox {
 
   private def report(line: Int, where: String, message: String): Unit = {
     Console.err.println(s"[line $line] Error$where: $message")
+
+    if (testMode) {
+      val errorToken = new Token(TokenType.EOF, "", null, line)
+      throw new RuntimeError(errorToken, message)
+    }
   }
 
   def error(token: Token, message: String): Unit = {
@@ -76,5 +82,9 @@ object Lox {
   def runtimeError(error: RuntimeError): Unit = {
     Console.err.println(s"${error.getMessage}\n[line ${error.token.line}]")
     hadRuntimeError = true
+
+    if (testMode) {
+      throw error
+    }
   }
 }

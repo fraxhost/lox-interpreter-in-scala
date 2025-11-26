@@ -1,5 +1,5 @@
 LoxTest:
-  + simple addition 0.007s
+  + simple addition 0.006s
   + subtraction 0.0s
   + multiplication 0.001s
   + division 0.0s
@@ -9,33 +9,113 @@ LoxTest:
   + boolean negation 0.001s
   + equality 0.0s
   + inequality 0.0s
-  + variable declaration 0.002s
-  + variable update 0.0s
-  + variable with expression 0.001s
+  + greater than 0.002s
+  + less than 0.001s
+  + greater equal 0.0s
+  + less equal 0.0s
+  + multiple operations 0.001s
+  + parentheses priority 0.0s
+  + variable declaration 0.001s
+  + variable update 0.001s
+  + variable shadowing 0.0s
+  + variable expression 0.001s
   + multiple variables 0.0s
-  + expression using variables 0.0s
-  + variable shadowing 0.002s
-  + simple if 0.0s
-  + if-else 0.001s
+  + simple if 0.001s
+  + if else true 0.0s
+  + if else false 0.001s
   + nested if 0.0s
-  + comparison in if 0.001s
-  + logical AND in if 0.0s
-  + logical OR in if 0.0s
+  + comparison in if 0.0s
+  + logical AND 0.001s
+  + logical OR 0.0s
   + simple while loop 0.001s
-  + while with accumulation 0.001s
-  + simple for loop 0.0s
-  + for loop with accumulation 0.001s
-  + simple function add 0.001s
-  + recursive function factorial 0.001s
+  + while accumulation 0.0s
+  + for loop 0.001s
+  + for accumulation 0.0s
+  + break in while 0.001s
+  + continue in while 0.0s
+  + function add 0.001s
+  + recursive factorial 0.001s
   + function shadowing 0.0s
-  + function returning boolean 0.0s
-  + simple class creation 0.001s
-  + class with method 0.001s
-  + field access in class 0.002s
-  + field update in class 0.0s
-  + this keyword in class 0.001s
-  + super call with inheritance 0.001s
-  + multi-level inheritance 0.0s
-  + multiple operation on class fields 0.001s
-  + function and class interaction 0.001s
-  + full inheritance test 0.0s
+  + function boolean 0.0s
+  + function with if 0.001s
+  + function without return 0.0s
+  + closure test 0.0s
+  + recursive Fibonacci 0.001s
+  + class empty 0.0s
+  + class field 0.001s
+  + class field update 0.0s
+  + this keyword 0.001s
+  + super call 0.0s
+  + multi-level inheritance 0.001s
+  + multiple class operations 0.0s
+  + function-class interaction 0.001s
+  + string literal 0.0s
+  + string concatenation 0.0s
+  + empty string 0.0s
+  + unicode string 0.0s
+  + string with number 0.001s
+  + zero addition 0.0s
+  + negative number addition 0.0s
+  + large number 0.0s
+  + small number 0.001s
+  + float addition 0.0s
+  + float multiplication 0.0s
+  + true AND false 0.0s
+  + true OR false 0.0s
+  + negation 0.001s
+  + complex arithmetic 0.0s
+  + nested blocks 0.0s
+  + while nested 0.001s
+  + for nested 0.0s
+  + function returning function 0.0s
+  + closure with var 0.001s
+  + factorial zero 0.0s
+  + fibonacci zero 0.0s
+  + fibonacci one 0.0s
+  + fibonacci large 0.001s
+  + function default return 0.0s
+  + variable as function 0.0s
+  + class method call 0.001s
+  + class method with arg 0.0s
+  + method using field 0.0s
+  + method updating field 0.001s
+  + inheritance override 0.0s
+  + super call-1 0.0s
+  + multi-level inheritance-1 0.001s
+  + multiple fields 0.0s
+  + field shadowing 0.0s
+  + function using class 0.001s
+  + boolean function 0.0s
+  + boolean function false 0.0s
+  + complex boolean 0.0s
+  + logical negation 0.001s
+  + string interpolation 0.0s
+  + array-like var 0.0s
+  + array sum 0.0s
+  + undefined variable 0.0s
+  + division by zero 0.0s
+  + nested function calls 0.001s
+  + recursive nested 0.0s
+  + empty block 0.0s
+  + multiple statements 0.0s
+  + complex nested 0.001s
+  + sum 1 to 5 0.0s
+  + factorial 6 0.0s
+  + Fibonacci 7 0.001s
+  + sum even numbers 0.0s
+  + sum odd numbers 0.001s
+  + find max 0.0s
+  + find min 0.001s
+  + sum squares 0.0s
+  + count digits 0.0s
+  + reverse number 0.0s
+  + power calculation 0.001s
+  + sum factorials 0.002s
+  + gcd 0.001s
+  + lcm 0.0s
+  + is prime 0.001s
+  + sum primes 1-10 0.0s
+  + factorial multiple variables 0.0s
+  + nested loops multiplication table 0.001s
+  + fibonacci sequence 0.0s
+  + sum of squares odd 0.0s

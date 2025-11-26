@@ -57,7 +57,7 @@ scala-cli test src
 ### Run Tests and Print Results to Text File
 
 ```bash
-scala-cli test --color never src 2>&1 | sed -E "s/\x1b\[[0-9;]*m//g" | grep -v "WARNING" > clean_test_results.txt
+scala-cli test --color never src 2>&1 | sed -E "s/\x1b\[[0-9;]*m//g" | grep -v "WARNING" > test_results.txt
 ```
 
 This runs the test suite for our Lox interpreter.
